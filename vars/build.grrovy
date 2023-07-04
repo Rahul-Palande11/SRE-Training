@@ -1,0 +1,9 @@
+def call() {
+stages {
+  stage(build) {
+        bat "javac Hello.java"
+        bat "java Hello"
+        echo "Building done"
+      }
+  }
+}
